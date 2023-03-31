@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+  </head>
+  <body>
+
+    
+    <form action="">
+      <fieldset>
+        <!-- Datos personales -->
+        <legend>Datos personales</legend>
+        <p>
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required>
+        </p>
+        <p>
+          <label for="apellido">Apellido:</label>
+          <input type="text" id="apellido" name="apellido" required>
+        </p>
+        <p>
+          <label for="edad">Edad</label>
+          <input type="number" id="edad" name="edad" min="0" max="150" required>
+        </p>
+        <p>
+          <label for="sexo">Sexo:</label>
+          <label>
+            <input type="radio" name="sexo" value="Hombre">
+            Hombre
+          </label>
+          <label>
+            <input type="radio" name="sexo" value="Mujer">
+            Mujer
+          </label>
+          <label>
+            <input type="radio" name="sexo" value="Otros">
+            Otros
+          </label>
+        </p>
+        <p>
+          <label for="nacimiento">Fecha de nacimiento:</label>
+          <input type="date" id="nacimiento" name="nacimiento">
+        </p>
+      </fieldset>
+      
+      <!-- Datos direccion -->
+      <fieldset>
+        <legend>Datos direccion</legend>
+        <p>
+          <label for="tipo_direccion">Tipo de vía:</label>
+          <select name="tipo_direc" id="">
+            <option value="Calle">Calle</option>
+            <option value="Avenida">Avenida</option>
+            <option value="Carretera">Carretera</option>
+            <option value="Otro">Otro</option>
+          </select>
+          <input type="text" id="otra_dir" name="otra_dir" placeholder="Si eligió otro escriba aquí">
+        </p>
+        <p>
+          <label for="dir_nombre">Nombre:</label>
+          <input type="text" id="dir_nombre" name="dir_nombre" required>
+        </p>
+  
+        <p>
+          <label for="portal">Portal:</label>
+          <input type="number" id="portal" name="portal" required>
+        </p>
+  
+        <p>
+          <label for="planta">Planta:</label>
+          <input type="number" id="planta" name="planta" required>
+        </p>
+  
+        <p>
+          <label for="puerta">Puerta:</label>
+          <input type="number" id="puerta" name="puerta" required>
+        </p>
+        <p>
+          <label for="postal">Código postal:</label>
+          <input type="number" id="postal" name="postal" required>
+        </p>
+        <p>
+          <label for="localidad">Localidad:</label>
+          <input type="text" id="localidad" name="localidad" required>
+        </p>
+        <p>
+          <label for="provincia">Provincia:</label>
+          <input type="text" id="provincia" name="provincia" required>
+        </p>
+      </fieldset>
+    
+      <!-- Datos contacto -->
+      <fieldset>
+        <legend>Datos contacto</legend>
+        <p>
+          <label>Email:</label>
+          <input type="email" name="email" placeholder="ej. alex@meail.com">   
+        </p>
+        <p>
+          <label for="telefono">Teléfono:</label>
+          <input type="tel" id="cod_pais" name="cod_pais" placeholder="Código pais: ej. 56" required>
+          <input type="tel" id="telefono" name="telefono" placeholder="Numero ej. 900000000" required>
+        </p>
+        <p>
+          <label for="imagen">Añadir fotografía</label>
+          <input type="file" id="imagen" name="imagen" accept=".png, .jpg" size="1048576">
+        </p>
+        <p>
+          <label for="aficiones">Aficiones:</label>
+          <textarea name="aficiones" id="aficiones" cols="30" rows="5" maxlength="500" placeholder="Maximo de 500 caracteres."></textarea>
+        </p>
+      </fieldset>
+
+      <br>
+      <button type="button" onclick="window.location.href='index.html'">Cancelar</button>
+      <button type="reset">Linpiar</button>
+      <button type="submit">Enviar</button>   
+     
+    </form>
+
+  </body>
+</html>
